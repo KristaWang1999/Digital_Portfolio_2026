@@ -76,11 +76,11 @@ export const PROJECTS: Project[] = [
     brandColor: '#CF2698',
     year: '2022',
     description: 'Afrotunes provides digital distribution for independent artists and labels, simplifying complex royalties workflows.',
-    challenge: '简化个人创作者复杂的版税 and 分发流程。',
-    solution: '大胆、充满活力的界面，通过清晰的数据分析 and 工具包为艺术家赋能。',
-    metrics: ['100% Royalties Tracking', 'Multi-platform Push', 'Artist Growth +40%'],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=1470&auto=format&fit=crop',
-    longImages: ['https://images.unsplash.com/photo-1470225620780-dba8ba36b745??q=80&w=1470&auto=format&fit=crop']
+    challenge: '',
+    solution: '',
+    metrics: [],
+    imageUrl: '/afrotune.png',
+    longImages: ['/afrotune.png']
   }
 ];
 

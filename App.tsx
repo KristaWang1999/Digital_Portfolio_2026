@@ -312,7 +312,72 @@ const App: React.FC = () => {
         </div>
       </footer>
 
+      
+      
+
+
+
+
+
       {/* Project Detail Modal */}
+      {selectedProject && (
+          <div className="fixed inset-0 z-[200] overflow-y-auto bg-[#050505] animate-[fadeIn_0.5s_cubic-bezier(0.19,1,0.22,1)]">
+            <div className="absolute inset-0 bg-grid-white/[0.02] -z-10" />
+    
+            {/* 关闭按钮 */}
+            <button 
+              onClick={() => setSelectedProject(null)}
+              className="fixed top-10 right-10 z-[210] w-14 h-14 rounded-full bg-white/5 backdrop-blur-2xl flex items-center justify-center border border-white/10 hover:bg-white hover:text-black transition-all hover:rotate-90"
+            >
+               <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+               </svg>
+            </button>
+
+            <div className="max-w-7xl mx-auto py-32 px-6 md:px-16">
+              {/* 文字详情区 */}
+              <div className="mb-20">
+                <p className="text-[#7700FF] mono text-xs mb-6 uppercase tracking-[0.3em] font-bold">{selectedProject.category}</p>
+                <h2 className="text-6xl md:text-[10vw] font-bold mb-16 leading-[0.8] tracking-tighter uppercase">{selectedProject.title}</h2>
+        
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-20 py-16 border-y border-white/5">
+                  <div>
+                    <h4 className="text-white/30 text-[10px] mono uppercase mb-6 tracking-widest uppercase">{t.modal.challenge}</h4>
+                    <p className="text-gray-400 leading-relaxed text-lg">{selectedProject.challenge}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-white/30 text-[10px] mono uppercase mb-6 tracking-widest uppercase">{t.modal.solution}</h4>
+                    <p className="text-gray-400 leading-relaxed text-lg">{selectedProject.solution}</p>
+                  </div>
+                  <div>
+                    <h4 className="text-white/30 text-[10px] mono uppercase mb-6 tracking-widest uppercase">{t.modal.results}</h4>
+                    <ul className="space-y-6">
+                      {selectedProject.metrics.map((m, i) => (
+                        <li key={i} className="text-2xl font-bold flex items-center gap-4 group">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#7700FF] shadow-[0_0_10px_#7700FF]" />
+                          <span className="group-hover:translate-x-1 transition-transform">{m}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* 铺满的长图片展示区 */}
+              {selectedProject.fullImage && (
+                <div className="w-full">
+                  <img 
+                    src={selectedProject.fullImage} 
+                    alt={selectedProject.title}
+                    className="w-full h-auto object-cover rounded-sm shadow-2xl"
+                  />
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+      
+      {/* Project Detail Modal
       {selectedProject && (
         <div className="fixed inset-0 z-[200] overflow-y-auto bg-[#050505] animate-[fadeIn_0.5s_cubic-bezier(0.19,1,0.22,1)]">
           <div className="absolute inset-0 bg-grid-white/[0.02] -z-10" />
@@ -351,7 +416,14 @@ const App: React.FC = () => {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+            
+
+
+
+
+
 
             <div className="space-y-16">
               {selectedProject.longImages.map((src, i) => (
