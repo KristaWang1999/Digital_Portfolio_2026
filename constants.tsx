@@ -66,8 +66,8 @@ export const PROJECTS: Project[] = [
     challenge: 'Building a better African music ecosystem and bringing unique sounds to more people in a complex economic landscape.',
     solution: 'Established regional independent homepage distribution and segmented users by key operating countries and high-potential areas.',
     metrics: ['88M+ Monthly Active Users', '100M+ Total Users', '+17.3% MAU Growth', '120+ Visual Localizations'],
-    imageUrl: '/boomplay.png',
-    longImages: ['/boomplay.png']
+    imageUrl: '/boomplay1.png',
+    longImages: ['/boomplay1.png']
   },
   {
     id: 'afrotunes',
