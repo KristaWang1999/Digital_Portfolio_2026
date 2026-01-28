@@ -57,7 +57,7 @@ const App: React.FC = () => {
   // --------------------------------------------------------------------------
   const ComchatDetail = () => {
     // 占位符图片 - 您可以将此 URL 替换为本地长图的路径
-    const longImagePlaceholder = "https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2000&auto=format&fit=crop";
+    const longImagePlaceholder = "/comchat.png";
     
     return (
       <div className="w-full bg-[#050505] min-h-screen animate-[fadeIn_0.8s_ease-out]">
@@ -93,7 +93,7 @@ const App: React.FC = () => {
   // --------------------------------------------------------------------------
   const BoomplayDetail = () => {
     // 占位符图片 - 您可以将此 URL 替换为本地长图的路径
-    const longImagePlaceholder = "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=2000&auto=format&fit=crop";
+    const longImagePlaceholder = "/boomplay.png";
 
     return (
       <div className="w-full bg-[#050505] min-h-screen animate-[fadeIn_0.8s_ease-out]">

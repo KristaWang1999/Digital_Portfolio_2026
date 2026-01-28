@@ -53,8 +53,8 @@ export const PROJECTS: Project[] = [
     challenge: '设计一个在 2D 移动端和 3D AR 空间中都感觉自然跨设备生态系统。',
     solution: '创建了统一的设计 language，专注于效率、清晰度和低认知负荷。',
     metrics: ['Reduced Training Cost', 'Cross-platform Sync', 'Zero Latency Feel'],
-    imageUrl: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1528&auto=format&fit=crop',
-    longImages: ['https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1528&auto=format&fit=crop']
+    imageUrl: '/comchat.png',
+    longImages: ['/comchat.png']
   },
   {
     id: 'boomplay',
@@ -66,8 +66,8 @@ export const PROJECTS: Project[] = [
     challenge: 'Building a better African music ecosystem and bringing unique sounds to more people in a complex economic landscape.',
     solution: 'Established regional independent homepage distribution and segmented users by key operating countries and high-potential areas.',
     metrics: ['88M+ Monthly Active Users', '100M+ Total Users', '+17.3% MAU Growth', '120+ Visual Localizations'],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=1470&auto=format&fit=crop',
-    longImages: []
+    imageUrl: '/boomplay.png',
+    longImages: ['/boomplay.png']
   },
   {
     id: 'afrotunes',
